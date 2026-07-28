@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="100%" height="auto">
+  <rect width="1200" height="90" fill="#ffffff"/>
+  
+  <!-- THE TIMES -->
+  <g transform="translate(40, 22)">
+    <text x="0" y="38" font-family="'Times New Roman', Times, serif" font-weight="900" font-size="40" fill="#000000" letter-spacing="1.5">THE</text>
+    <!-- Coat of Arms -->
+    <g transform="translate(102, 4) scale(1.05)">
+      <path fill="#000000" d="M12,32 C12,18 24,12 40,12 C56,12 68,18 68,32 Z M32,22 L48,22 M40,14 L40,30"/>
+      <circle cx="26" cy="22" r="3.5" fill="#000000"/>
+      <circle cx="54" cy="22" r="3.5" fill="#000000"/>
+    </g>
+    <text x="195" y="38" font-family="'Times New Roman', Times, serif" font-weight="900" font-size="40" fill="#000000" letter-spacing="1.5">TIMES</text>
+  </g>
+
+  <!-- sky news -->
+  <defs>
+    <linearGradient id="skyRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff1a1a"/>
+      <stop offset="100%" stop-color="#cc0000"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(415, 20)">
+    <text x="0" y="40" font-family="'Inter', sans-serif" font-weight="900" font-size="44" fill="#000000" letter-spacing="-2">sky</text>
+    <rect x="74" y="5" width="112" height="44" rx="5" fill="url(#skyRed)"/>
+    <text x="83" y="39" font-family="'Inter', sans-serif" font-weight="700" font-size="33" fill="#ffffff" letter-spacing="-0.5">news</text>
+  </g>
+
+  <!-- 4 (Channel 4) -->
+  <g transform="translate(635, 18)">
+    <path fill="#000000" d="M6,2 L26,2 L26,20 L38,20 L38,28 L26,28 L26,44 L17,44 L17,28 L6,28 Z M17,11 L11,20 L17,20 Z"/>
+  </g>
+
+  <!-- itv -->
+  <g transform="translate(735, 20)">
+    <text x="0" y="44" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="52" fill="#000000" letter-spacing="-4">itv</text>
+  </g>
+
+  <!-- BBC -->
+  <g transform="translate(865, 24)">
+    <rect x="0" y="0" width="38" height="38" fill="#000000"/>
+    <text x="19" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="27" fill="#ffffff" text-anchor="middle">B</text>
+    
+    <rect x="43" y="0" width="38" height="38" fill="#000000"/>
+    <text x="62" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="27" fill="#ffffff" text-anchor="middle">B</text>
+
+    <rect x="86" y="0" width="38" height="38" fill="#000000"/>
+    <text x="105" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="27" fill="#ffffff" text-anchor="middle">C</text>
+  </g>
+</svg>

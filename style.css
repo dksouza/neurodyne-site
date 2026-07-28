@@ -1,0 +1,363 @@
+/* CSS Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1c1e21;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Top Header Bar */
+.top-header {
+  width: 100%;
+  background-color: #990000;
+  color: #ffffff;
+}
+
+.header-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 16px;
+}
+
+.header-logo {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+}
+
+.menu-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+/* Ticker Sub-header */
+.header-ticker {
+  background-color: #7a0000;
+  height: 26px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  padding-left: 100%;
+  animation: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Main Container */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 60px 16px;
+}
+
+/* Article Metadata */
+.article-meta {
+  margin-bottom: 20px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 2px;
+}
+
+.updated-time {
+  font-size: 13px;
+  color: #666666;
+}
+
+/* Headline */
+.main-headline {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: #050505;
+  margin: 20px 0 28px 0;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  background-color: #000000;
+  aspect-ratio: 4 / 5;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: 28px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.video-overlay-btn:hover {
+  opacity: 0.9;
+}
+
+/* Press Logos Banner Image */
+.press-logos-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 35px 0;
+  overflow: hidden;
+}
+
+.press-logos-img {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Comments Section (Image 3) */
+.comments-section {
+  border: 1px solid #e4e6eb;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.comments-count {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4b4f56;
+  margin-bottom: 20px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.comment-reply {
+  margin-left: 48px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #e4e6eb;
+  object-fit: cover;
+}
+
+.comment-reply .avatar {
+  width: 34px;
+  height: 34px;
+}
+
+.comment-content {
+  flex: 1;
+  max-width: calc(100% - 52px);
+}
+
+.comment-bubble {
+  background-color: #f0f2f5;
+  border-radius: 16px;
+  padding: 10px 14px;
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+}
+
+.comment-author {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #050505;
+  margin-bottom: 2px;
+}
+
+.comment-text {
+  font-size: 13.5px;
+  color: #050505;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.mention {
+  font-weight: 600;
+  color: #1877f2;
+}
+
+/* Reaction Badges on Comments */
+.reaction-badge {
+  position: absolute;
+  right: 12px;
+  bottom: -10px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  user-select: none;
+}
+
+.reaction-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.icon-svg {
+  display: block;
+}
+
+.reaction-count {
+  font-size: 12px;
+  color: #65676b;
+  font-weight: 500;
+}
+
+/* Comment Footer (Like, Reply, Time) */
+.comment-footer {
+  margin-top: 4px;
+  margin-left: 12px;
+  font-size: 12px;
+  color: #65676b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #65676b;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+}
+
+.action-btn:hover {
+  text-decoration: underline;
+}
+
+.time-ago {
+  color: #65676b;
+}
+
+/* Comments Closed Note */
+.comments-closed-note {
+  text-align: center;
+  font-size: 13px;
+  color: #65676b;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .main-headline {
+    font-size: 24px;
+  }
+  .logos-container {
+    gap: 16px;
+  }
+  .logo-the-times {
+    font-size: 20px;
+  }
+  .logo-sky-news {
+    font-size: 20px;
+  }
+  .comment-reply {
+    margin-left: 28px;
+  }
+  .comments-section {
+    padding: 16px 12px;
+  }
+}
